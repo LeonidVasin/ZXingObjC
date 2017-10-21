@@ -121,6 +121,10 @@
 
 #pragma mark - Property Setters
 
+-(void)setStillImageOutput:(AVCaptureStillImageOutput *)stillImageOutput {
+    [self.session addOutput:stillImageOutput];
+}
+
 - (void)setCamera:(int)camera {
   if (_camera != camera) {
     _camera = camera;

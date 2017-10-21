@@ -43,6 +43,7 @@
 @property (nonatomic, copy) NSString *sessionPreset;
 @property (nonatomic, assign) BOOL torch;
 @property (nonatomic, assign) CGAffineTransform transform;
+@property (strong, nonatomic) AVCaptureStillImageOutput *stillImageOutput;
 
 - (int)back;
 - (int)front;
